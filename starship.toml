@@ -39,7 +39,7 @@ style = "bright-white"
 format = "$all_status$ahead_behind"
 
 [golang]
-format = " via [    $version](bold cyan) "
+format = " via [ $version](bold cyan) "
 detect_files = ["go.mod", "go.sum"]
 
 [nodejs]
@@ -48,8 +48,9 @@ detect_files = ["package.json", ".node-version"]
 detect_folders = ["node_modules"]
 
 [python]
-format = "[$symbol$version]($style) "
+format = " [$symbol($version )(($virtualenv) )]($style) "
 style = "bold green"
+pyenv_version_name = false
 
 [time]
 time_format = "%T"
