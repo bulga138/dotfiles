@@ -1,4 +1,82 @@
 function Show-Tree {
+    <#
+    .SYNOPSIS
+        Displays a visual, recursive tree of a folder's contents in the console.
+
+    .DESCRIPTION
+        The Show-Tree function emulates the behavior of the classic 'tree' command,
+        providing a color-coded, visual representation of a directory structure.
+        It recursively lists files and directories from a specified path using
+        box-drawing characters to illustrate the hierarchy.
+
+        The function offers several options for customization, including excluding
+        specific folders, limiting the recursion depth, showing file sizes, displaying
+        absolute paths, and skipping hidden items.
+
+    .PARAMETER Path
+        Specifies the path to the root folder to display. The default is the current
+        location.
+
+    .PARAMETER Exclude
+        Specifies an array of folder or file names to exclude from the output.
+        By default, the function excludes 'node_modules', 'dist', and '.git'.
+
+    .PARAMETER Depth
+        Specifies the maximum number of directory levels to display. The default
+        value (`[int]::MaxValue`) displays all levels.
+
+    .PARAMETER Size
+        If specified, displays the size of each file in a human-readable format
+        (B, KB, MB, GB) next to its name.
+
+    .PARAMETER AbsolutePath
+        If specified, displays the full, absolute path for each item instead of
+        just its name.
+
+    .PARAMETER SkipHidden
+        If specified, hidden files and directories are excluded from the output.
+
+    .PARAMETER IndentLevel
+        This parameter is intended for internal use by the recursive function calls
+        to track the current recursion depth. It should not be specified manually.
+
+    .PARAMETER PrefixParts
+        This parameter is intended for internal use by the recursive function calls
+        to build the visual prefix (`│   `, `    `) for each line. It should not be
+        specified manually.
+
+    .INPUTS
+        None. This function does not accept input from the pipeline.
+
+    .OUTPUTS
+        System.String. The function writes a formatted tree structure directly
+        to the console; it does not return a string object.
+
+    .EXAMPLE
+        PS C:\MyProject> Show-Tree
+
+        This command displays a recursive tree of the current directory, excluding
+        the default 'node_modules', 'dist', and '.git' folders.
+
+    .EXAMPLE
+        PS C:\MyProject> Show-Tree -Depth 2 -Size
+
+        This command displays the directory tree for only the top two levels and
+        includes the size of each file.
+
+    .EXAMPLE
+        PS C:\> Show-Tree -Path "C:\Users\Alice\Documents" -SkipHidden -Exclude @("temp", "old_files")
+
+        This command displays the tree for the user's Documents folder, skips all
+        hidden items, and additionally excludes any folders or files named "temp"
+        or "old_files".
+
+    .NOTES
+        - Directories are displayed in blue, and files are displayed in cyan.
+        - The visual prefix characters (├──, └──, │  ) are in white.
+        - This is a pure PowerShell implementation. Performance may vary on
+        extremely large directory structures compared to native compiled tools.
+    #>
     param (
         [string]$Path = (Get-Location).Path,
         [int]$IndentLevel = 0,
