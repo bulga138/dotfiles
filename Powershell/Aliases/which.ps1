@@ -1,0 +1,1 @@
+New-Alias which Get-Command

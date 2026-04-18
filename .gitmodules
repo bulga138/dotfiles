@@ -1,0 +1,3 @@
+[submodule "opencode/avoid-ai-writing"]
+	path = opencode/avoid-ai-writing
+	url = https://github.com/conorbronsdon/avoid-ai-writing.git
