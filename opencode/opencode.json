@@ -53,6 +53,41 @@
             "context": 2097152,
             "output": 8192
           }
+        },
+        "nvidia-auto": {
+          "name": "NVIDIA Auto Router",
+          "limit": {
+            "context": 128000,
+            "output": 8192
+          }
+        },
+        "nvidia-coding": {
+          "name": "NVIDIA Coding Router",
+          "limit": {
+            "context": 32768,
+            "output": 8192
+          }
+        },
+        "nvidia-reasoning": {
+          "name": "NVIDIA Reasoning Router",
+          "limit": {
+            "context": 128000,
+            "output": 8192
+          }
+        },
+        "nvidia-general": {
+          "name": "NVIDIA General Router",
+          "limit": {
+            "context": 128000,
+            "output": 8192
+          }
+        },
+        "nvidia-fast": {
+          "name": "NVIDIA Fast Router",
+          "limit": {
+            "context": 32768,
+            "output": 8192
+          }
         }
       }
     },

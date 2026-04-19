@@ -26,10 +26,624 @@ model_list:
     litellm_params:
       model: ollama/deepseek-ocr:latest
       api_base: "http://localhost:11434"
+  - model_name: nvidia-auto
+    litellm_params:
+      model: nvidia_nim/deepseek-ai/deepseek-v3.2
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-auto
+    litellm_params:
+      model: nvidia_nim/deepseek-ai/deepseek-v3.1
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-auto
+    litellm_params:
+      model: nvidia_nim/deepseek-ai/deepseek-v3.1-terminus
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-auto
+    litellm_params:
+      model: nvidia_nim/deepseek-ai/deepseek-r1-distill-qwen-32b
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-auto
+    litellm_params:
+      model: nvidia_nim/nvidia/llama-3.1-nemotron-ultra-253b-v1
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-auto
+    litellm_params:
+      model: nvidia_nim/nvidia/llama-3.3-nemotron-super-49b-v1
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-auto
+    litellm_params:
+      model: nvidia_nim/nvidia/llama-3.1-nemotron-nano-8b-v1
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-auto
+    litellm_params:
+      model: nvidia_nim/meta/llama-3.3-70b-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-auto
+    litellm_params:
+      model: nvidia_nim/meta/llama-3.1-8b-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-auto
+    litellm_params:
+      model: nvidia_nim/meta/llama-3.1-70b-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-auto
+    litellm_params:
+      model: nvidia_nim/meta/llama-3.1-405b-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-auto
+    litellm_params:
+      model: nvidia_nim/meta/llama-4-maverick-17b-128e-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-auto
+    litellm_params:
+      model: nvidia_nim/meta/llama-4-scout-17b-16e-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-auto
+    litellm_params:
+      model: nvidia_nim/moonshotai/kimi-k2-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-auto
+    litellm_params:
+      model: nvidia_nim/qwen/qwen3-coder-480b-a35b-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-auto
+    litellm_params:
+      model: nvidia_nim/qwen/qwen2.5-coder-32b-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-auto
+    litellm_params:
+      model: nvidia_nim/mistralai/devstral-2-123b-instruct-2512
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-auto
+    litellm_params:
+      model: nvidia_nim/mistralai/codestral-22b-instruct-v0.1
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-auto
+    litellm_params:
+      model: nvidia_nim/qwen/qwen3.5-397b-a17b
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-auto
+    litellm_params:
+      model: nvidia_nim/qwen/qwen3.5-122b-a10b
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-auto
+    litellm_params:
+      model: nvidia_nim/qwen/qwen3-next-80b-a3b-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-auto
+    litellm_params:
+      model: nvidia_nim/mistralai/mistral-large-2-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-auto
+    litellm_params:
+      model: nvidia_nim/mistralai/mixtral-8x22b-instruct-v0.1
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-auto
+    litellm_params:
+      model: nvidia_nim/mistralai/mistral-medium-3-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-auto
+    litellm_params:
+      model: nvidia_nim/mistralai/mistral-small-24b-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-auto
+    litellm_params:
+      model: nvidia_nim/google/gemma-2-27b-it
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-auto
+    litellm_params:
+      model: nvidia_nim/microsoft/phi-4-mini-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-auto
+    litellm_params:
+      model: nvidia_nim/microsoft/phi-4-mini-flash-reasoning
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-auto
+    litellm_params:
+      model: nvidia_nim/deepseek-ai/deepseek-r1-distill-qwen-14b
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-auto
+    litellm_params:
+      model: nvidia_nim/deepseek-ai/deepseek-r1-distill-qwen-7b
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-auto
+    litellm_params:
+      model: nvidia_nim/deepseek-ai/deepseek-r1-distill-llama-8b
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-reasoning
+    litellm_params:
+      model: nvidia_nim/deepseek-ai/deepseek-v3.2
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-reasoning
+    litellm_params:
+      model: nvidia_nim/deepseek-ai/deepseek-r1-distill-qwen-32b
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-reasoning
+    litellm_params:
+      model: nvidia_nim/nvidia/llama-3.1-nemotron-ultra-253b-v1
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-reasoning
+    litellm_params:
+      model: nvidia_nim/meta/llama-3.1-405b-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-reasoning
+    litellm_params:
+      model: nvidia_nim/qwen/qwen3.5-397b-a17b
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-reasoning
+    litellm_params:
+      model: nvidia_nim/qwen/qwen3.5-122b-a10b
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-general
+    litellm_params:
+      model: nvidia_nim/deepseek-ai/deepseek-v3.1
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-general
+    litellm_params:
+      model: nvidia_nim/deepseek-ai/deepseek-v3.1-terminus
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-general
+    litellm_params:
+      model: nvidia_nim/nvidia/llama-3.3-nemotron-super-49b-v1
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-general
+    litellm_params:
+      model: nvidia_nim/meta/llama-3.3-70b-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-general
+    litellm_params:
+      model: nvidia_nim/meta/llama-3.1-70b-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-general
+    litellm_params:
+      model: nvidia_nim/meta/llama-4-maverick-17b-128e-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-general
+    litellm_params:
+      model: nvidia_nim/meta/llama-4-scout-17b-16e-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-general
+    litellm_params:
+      model: nvidia_nim/qwen/qwen3-next-80b-a3b-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-general
+    litellm_params:
+      model: nvidia_nim/mistralai/mistral-large-2-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-general
+    litellm_params:
+      model: nvidia_nim/mistralai/mixtral-8x22b-instruct-v0.1
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-general
+    litellm_params:
+      model: nvidia_nim/mistralai/mistral-medium-3-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-fast
+    litellm_params:
+      model: nvidia_nim/nvidia/llama-3.1-nemotron-nano-8b-v1
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-fast
+    litellm_params:
+      model: nvidia_nim/meta/llama-3.1-8b-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-fast
+    litellm_params:
+      model: nvidia_nim/mistralai/mistral-small-24b-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-fast
+    litellm_params:
+      model: nvidia_nim/google/gemma-2-27b-it
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-fast
+    litellm_params:
+      model: nvidia_nim/microsoft/phi-4-mini-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-fast
+    litellm_params:
+      model: nvidia_nim/microsoft/phi-4-mini-flash-reasoning
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-fast
+    litellm_params:
+      model: nvidia_nim/deepseek-ai/deepseek-r1-distill-qwen-14b
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-fast
+    litellm_params:
+      model: nvidia_nim/deepseek-ai/deepseek-r1-distill-qwen-7b
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-fast
+    litellm_params:
+      model: nvidia_nim/deepseek-ai/deepseek-r1-distill-llama-8b
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-coding
+    litellm_params:
+      model: nvidia_nim/moonshotai/kimi-k2-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-coding
+    litellm_params:
+      model: nvidia_nim/qwen/qwen3-coder-480b-a35b-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-coding
+    litellm_params:
+      model: nvidia_nim/qwen/qwen2.5-coder-32b-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-coding
+    litellm_params:
+      model: nvidia_nim/mistralai/devstral-2-123b-instruct-2512
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: nvidia-coding
+    litellm_params:
+      model: nvidia_nim/mistralai/codestral-22b-instruct-v0.1
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+      timeout: 30
+      stream_timeout: 60
+  - model_name: deepseek-v3.2
+    litellm_params:
+      model: nvidia_nim/deepseek-ai/deepseek-v3.2
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+  - model_name: deepseek-v3.1
+    litellm_params:
+      model: nvidia_nim/deepseek-ai/deepseek-v3.1
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+  - model_name: deepseek-v3.1-terminus
+    litellm_params:
+      model: nvidia_nim/deepseek-ai/deepseek-v3.1-terminus
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+  - model_name: deepseek-r1-distill-qwen-32b
+    litellm_params:
+      model: nvidia_nim/deepseek-ai/deepseek-r1-distill-qwen-32b
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+  - model_name: llama-3.1-nemotron-ultra-253b-v1
+    litellm_params:
+      model: nvidia_nim/nvidia/llama-3.1-nemotron-ultra-253b-v1
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+  - model_name: llama-3.3-nemotron-super-49b-v1
+    litellm_params:
+      model: nvidia_nim/nvidia/llama-3.3-nemotron-super-49b-v1
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+  - model_name: llama-3.1-nemotron-nano-8b-v1
+    litellm_params:
+      model: nvidia_nim/nvidia/llama-3.1-nemotron-nano-8b-v1
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+  - model_name: llama-3.3-70b-instruct
+    litellm_params:
+      model: nvidia_nim/meta/llama-3.3-70b-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+  - model_name: llama-3.1-8b-instruct
+    litellm_params:
+      model: nvidia_nim/meta/llama-3.1-8b-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+  - model_name: llama-3.1-70b-instruct
+    litellm_params:
+      model: nvidia_nim/meta/llama-3.1-70b-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+  - model_name: llama-3.1-405b-instruct
+    litellm_params:
+      model: nvidia_nim/meta/llama-3.1-405b-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+  - model_name: llama-4-maverick-17b-128e-instruct
+    litellm_params:
+      model: nvidia_nim/meta/llama-4-maverick-17b-128e-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+  - model_name: llama-4-scout-17b-16e-instruct
+    litellm_params:
+      model: nvidia_nim/meta/llama-4-scout-17b-16e-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+  - model_name: kimi-k2-instruct
+    litellm_params:
+      model: nvidia_nim/moonshotai/kimi-k2-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+  - model_name: qwen3-coder-480b-a35b-instruct
+    litellm_params:
+      model: nvidia_nim/qwen/qwen3-coder-480b-a35b-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+  - model_name: qwen2.5-coder-32b-instruct
+    litellm_params:
+      model: nvidia_nim/qwen/qwen2.5-coder-32b-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+  - model_name: devstral-2-123b-instruct-2512
+    litellm_params:
+      model: nvidia_nim/mistralai/devstral-2-123b-instruct-2512
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+  - model_name: codestral-22b-instruct-v0.1
+    litellm_params:
+      model: nvidia_nim/mistralai/codestral-22b-instruct-v0.1
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+  - model_name: qwen3.5-397b-a17b
+    litellm_params:
+      model: nvidia_nim/qwen/qwen3.5-397b-a17b
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+  - model_name: qwen3.5-122b-a10b
+    litellm_params:
+      model: nvidia_nim/qwen/qwen3.5-122b-a10b
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+  - model_name: qwen3-next-80b-a3b-instruct
+    litellm_params:
+      model: nvidia_nim/qwen/qwen3-next-80b-a3b-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+  - model_name: mistral-large-2-instruct
+    litellm_params:
+      model: nvidia_nim/mistralai/mistral-large-2-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+  - model_name: mixtral-8x22b-instruct-v0.1
+    litellm_params:
+      model: nvidia_nim/mistralai/mixtral-8x22b-instruct-v0.1
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+  - model_name: mistral-medium-3-instruct
+    litellm_params:
+      model: nvidia_nim/mistralai/mistral-medium-3-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+  - model_name: mistral-small-24b-instruct
+    litellm_params:
+      model: nvidia_nim/mistralai/mistral-small-24b-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+  - model_name: gemma-2-27b-it
+    litellm_params:
+      model: nvidia_nim/google/gemma-2-27b-it
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+  - model_name: phi-4-mini-instruct
+    litellm_params:
+      model: nvidia_nim/microsoft/phi-4-mini-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+  - model_name: phi-4-mini-flash-reasoning
+    litellm_params:
+      model: nvidia_nim/microsoft/phi-4-mini-flash-reasoning
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+  - model_name: deepseek-r1-distill-qwen-14b
+    litellm_params:
+      model: nvidia_nim/deepseek-ai/deepseek-r1-distill-qwen-14b
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+  - model_name: deepseek-r1-distill-qwen-7b
+    litellm_params:
+      model: nvidia_nim/deepseek-ai/deepseek-r1-distill-qwen-7b
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
+  - model_name: deepseek-r1-distill-llama-8b
+    litellm_params:
+      model: nvidia_nim/deepseek-ai/deepseek-r1-distill-llama-8b
+      api_key: os.environ/NVIDIA_API_KEY
+      api_base: https://integrate.api.nvidia.com/v1
 
 general_settings:
-  master_key: "sk-...."
+  master_key: os.environ/LITELLM_MASTER_KEY
+  alerting: []
 
 router_settings:
+  routing_strategy: latency-based-routing
+  num_retries: 3
+  cooldown_time: 60
+  retry_after: 5
+  allowed_fails: 2
+  enable_pre_call_checks: true
   optional_pre_call_checks:
     - enforce_model_rate_limits
+
+litellm_settings:
+  num_retries: 3
+  request_timeout: 30
+  fallbacks:
+  - nvidia-coding:
+    - nvidia-reasoning
+    - nvidia-general
+  - nvidia-reasoning:
+    - nvidia-general
+    - nvidia-coding
+  - nvidia-general:
+    - nvidia-fast
+    - nvidia-reasoning
+  - nvidia-fast:
+    - nvidia-general
+  set_verbose: false
+  drop_params: true
